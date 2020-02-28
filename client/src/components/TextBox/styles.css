@@ -1,0 +1,32 @@
+.text-box {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 15%;
+}
+.text-box button {
+  all: unset;
+  color: #128c5d;
+  font-weight: bold;
+}
+
+textarea {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none;
+
+  background-color: transparent;
+  border-bottom: #128c5d solid 2px;
+  width: inherit;
+}
