@@ -4,7 +4,6 @@ import "./styles.css";
 import TextBox from "../TextBox/TextBox";
 import ChatStream from "../ChatStream/ChatStream";
 import io from "socket.io-client";
-import { BoxLoading } from "react-loadingg";
 
 class ChatColumn extends React.Component {
     constructor(props) {

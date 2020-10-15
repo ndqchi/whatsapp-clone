@@ -7,7 +7,8 @@ class Navbar extends React.Component {
     return (
       <header className="navbar">
         <div className="app-icon">
-        <img src = "https://cdn0.iconfinder.com/data/icons/smashicons-dialogue-flat-vol-1/58/38_-_Whatsapp_communication_dialogue_discussion-512.png"/>
+        <img src = "https://cdn0.iconfinder.com/data/icons/smashicons-dialogue-flat-vol-1/58/38_-_Whatsapp_communication_dialogue_discussion-512.png"
+        alt="WhatsApp"/>
         </div>
         <div className="app-name">WHATSAPP WEB</div>
         <div className="chat-name">
