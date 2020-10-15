@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 const bodyParser = require("body-parser");
 const { MongoClient } = require("mongodb");
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 5000;
 const cors = require("cors")({ origin: true });
 var server = require("http").Server(app);
 var io = require("socket.io")(server);
@@ -25,6 +25,7 @@ client.connect(err => {
 
 app.use(bodyParser.json());
 app.use(cors);
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.get("/", async (req,res) => {
 	//get all the documents in the collection
