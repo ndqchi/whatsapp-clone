@@ -3,7 +3,7 @@
 Based on knowledge acquired from a Backend Workshop, I created a personal project to further my understanding of React and Express.\
 This is a simple group chat which allows anyone to join and send their messages, with the front end simulating WhatsApp theme.
 
-## To run the web
+## Host locally
 
 1. Cloning the project
 
