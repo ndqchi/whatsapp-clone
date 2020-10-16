@@ -13,7 +13,7 @@ class ChatColumn extends React.Component {
             messages: [],
             loading: true
         };
-        this.server = "http://aqueous-savannah-37003.herokuapp.com";
+        this.server = "https://aqueous-savannah-37003.herokuapp.com/";
         this.socket = io(this.server);
     }
 
