@@ -6,8 +6,11 @@ const PORT = process.env.PORT || 5000;
 const cors = require("cors")({ origin: true });
 var server = require("http").Server(app);
 var io = require("socket.io")(server);
+if (process.env.NODE_ENV !== 'production') {
+	require('dotenv').config();
+}
 
-const uri = "mongodb+srv://Jolie:jolie@cluster0-3sxsg.mongodb.net/test?retryWrites=true&w=majority";
+const uri = "mongodb+srv://"+process.env.MONGODB_USERNAME+":"+process.env.MONGODB_PASSWORD+"@cluster0-3sxsg.mongodb.net/test?retryWrites=true&w=majority";
 const client = new MongoClient(uri, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
