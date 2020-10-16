@@ -13,7 +13,7 @@ class ChatColumn extends React.Component {
             messages: [],
             loading: true
         };
-        this.server = "/";
+        this.server = "http://aqueous-savannah-37003.herokuapp.com";
         this.socket = io(this.server);
     }
 
@@ -56,7 +56,7 @@ class ChatColumn extends React.Component {
         }));
         this.socket.emit("send", newMessage);
 
-        fetch(this.server + "send", {
+        fetch(this.server + "/send", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
